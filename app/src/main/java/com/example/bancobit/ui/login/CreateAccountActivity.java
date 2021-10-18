@@ -27,7 +27,7 @@ import com.example.bancobit.ui.login.LoginViewModel;
 import com.example.bancobit.ui.login.LoginViewModelFactory;
 import com.example.bancobit.databinding.ActivityCreateAccountBinding;
 
-public class LoginActivity extends AppCompatActivity {
+public class CreateAccountActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
     private ActivityCreateAccountBinding binding;
