@@ -1,87 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
-    tools:context=".MainMenu"
-    android:background="@color/ming">
+    android:layout_height="wrap_content"
+    android:background="@color/ming"
+    tools:context=".MainMenu">
 
+    <GridLayout
+        android:id="@+id/relative_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="140dp"
+        android:background="@color/ming"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <ImageButton
-        android:id="@+id/ayuda"
-        android:layout_width="96dp"
-        android:layout_height="97dp"
-        android:layout_row="1"
-        android:layout_column="1"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="@color/opaque_green"
-        app:srcCompat="@android:drawable/presence_online" />
+        <ImageButton
+            android:id="@+id/ayuda"
+            android:layout_width="96dp"
+            android:layout_height="97dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/opaque_green"
+            app:srcCompat="@android:drawable/presence_online" />
 
-    <ImageButton
-        android:id="@+id/generarPin"
-        android:layout_width="96dp"
-        android:layout_height="97dp"
-        android:layout_row="1"
-        android:layout_column="2"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="@color/opaque_green"
-        app:srcCompat="@android:drawable/presence_online" />
+        <ImageButton
+            android:id="@+id/generarPin"
+            android:layout_width="96dp"
+            android:layout_height="97dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/opaque_green"
+            app:srcCompat="@android:drawable/presence_online" />
 
-    <ImageButton
-        android:id="@+id/tarjetaVirtual"
-        android:layout_width="96dp"
-        android:layout_height="97dp"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="@color/opaque_green"
-        app:srcCompat="@android:drawable/presence_online" />
+        <ImageButton
+            android:id="@+id/tarjetaVirtual"
+            android:layout_width="96dp"
+            android:layout_height="97dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/opaque_green"
+            app:srcCompat="@android:drawable/presence_online" />
 
-    <ImageButton
-        android:id="@+id/transfer"
-        android:layout_width="96dp"
-        android:layout_height="97dp"
-        android:layout_row="0"
-        android:layout_column="0"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="100dp"
-        android:backgroundTint="@color/opaque_green"
-        app:srcCompat="@android:drawable/presence_online" />
+        <ImageButton
+            android:id="@+id/transfer"
+            android:layout_width="96dp"
+            android:layout_height="97dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/opaque_green"
+            app:srcCompat="@android:drawable/presence_online" />
 
-    <ImageButton
-        android:id="@+id/receive"
-        android:layout_width="99dp"
-        android:layout_height="95dp"
-        android:layout_row="0"
-        android:layout_column="1"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="100dp"
-        android:backgroundTint="@color/opaque_green"
-        app:srcCompat="@android:drawable/presence_online" />
+        <ImageButton
+            android:id="@+id/receive"
+            android:layout_width="99dp"
+            android:layout_height="95dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/opaque_green"
+            app:srcCompat="@android:drawable/presence_online" />
 
-    <ImageButton
-        android:id="@+id/sms"
-        android:layout_width="95dp"
-        android:layout_height="95dp"
-        android:layout_row="0"
-        android:layout_column="2"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="100dp"
-        android:backgroundTint="@color/opaque_green"
-        app:srcCompat="@android:drawable/presence_online" />
+        <ImageButton
+            android:id="@+id/sms"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/opaque_green"
+            app:srcCompat="@android:drawable/presence_online" />
 
-    <ImageButton
-        android:id="@+id/menuCuenta"
+        <ImageButton
+            android:id="@+id/menuCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:alpha="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/ming"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+        <ImageButton
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:backgroundTint="@color/ming"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="0"
-        android:layout_column="0"
-        android:alpha="@dimen/activity_horizontal_margin"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
 
 
-</GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
