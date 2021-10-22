@@ -9,7 +9,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_blue">#698996</color>
     <color name="opaque_green">#97B1A6</color>
-    <color name="rose">#EBBAB9</color>
+    <color name="moradoBoton">#8D1288</color>
     <color name="silver">#C9C5BA</color>
-    <color name="ming">#407076</color>
+    <color name="moradotarjeta">#C577F4</color>
+    <color name="accent1">#CD91F1</color>
+    <color name="accent2">#8CACFF</color>
+    <color name="Morado">#9B4BCC</color>
+    <color name="Moradofuerte">#7938CC</color>
+    <color name="azulface">#1D1ACA</color>
+    <color name="moradotwitch">#48057F</color>
+    <color name="rojoyutu">#970306</color>
+
 </resources>
